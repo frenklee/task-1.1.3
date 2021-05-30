@@ -86,6 +86,7 @@ public class UserDaoJDBCImpl implements UserDao {
             preparedStatement.setString(2,lastName);
             preparedStatement.setLong(3,age);
             preparedStatement.executeUpdate();
+
         } catch (SQLException e){
             e.printStackTrace();
         } finally {
@@ -102,6 +103,7 @@ public class UserDaoJDBCImpl implements UserDao {
                 }
 
         }
+        System.out.println("User с именем - " + name + " добавлен в базу данных.");
     }
 
     public void removeUserById(long id) {
