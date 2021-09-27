@@ -5,20 +5,11 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name="tabl")
+
 public class User {
-    @Id
-    @Column(name="id")
     private Long id;
-
-    @Column(name="name")
     private String name;
-
-    @Column(name="lastName")
     private String lastName;
-
-    @Column(name="age")
     private Byte age;
 
     public User() {
